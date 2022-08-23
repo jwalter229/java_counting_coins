@@ -11,6 +11,7 @@ import java.util.*;
 
 public class JavaApplication8 {
 
+    @SuppressWarnings("empty-statement")
     public static void main(String[] args) {
         //creating a new scanner
         Scanner computerKeyboardInput = new Scanner(System.in);
@@ -19,7 +20,6 @@ public class JavaApplication8 {
         /* public enum Coin {
             QUARTER, DIME, NICKEL, PENNY
         } // end enum Coin */
-        
         //prompting the user to enter how many Quarters
         System.out.print("How many coins are a QUARTER? ");
         //taking input from a user into the scanner
@@ -76,7 +76,11 @@ public class JavaApplication8 {
         /*  for (enum c : Coin){
                 System.out.print(c);
         } // end for each loop */
-        
+        int[] primes = {2, 3, 5, 7, 11, 13};
+
+        for (int p : primes) {
+        } // end for-each loop
+
         //displaying the total of all coins
         String total_string = String.format("%2.2f", total);
 
