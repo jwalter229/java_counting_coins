@@ -64,6 +64,7 @@ public class JavaApplication8 {
         System.out.println("Value of nickels: $" + nickVal_string);
         System.out.println("Value of pennies: $" + pennyVal_string); 
          */
+        
         //calculating the total value of all coin
         double total = quartVal + dimeVal + nickVal + pennyVal;
         int total_dollars = (int) total;
@@ -80,4 +81,4 @@ public class JavaApplication8 {
 
         System.out.println("Total worth of those coins is $" + total);
     }//end of main block
-}//End Class   
+}//End Class 
