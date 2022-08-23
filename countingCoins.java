@@ -79,6 +79,7 @@ public class JavaApplication8 {
         int[] primes = {2, 3, 5, 7, 11, 13};
 
         for (int p : primes) {
+            System.out.print("");
         } // end for-each loop
 
         //displaying the total of all coins
