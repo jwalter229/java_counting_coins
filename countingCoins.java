@@ -16,6 +16,9 @@ public class JavaApplication8 {
         Scanner input = new Scanner(System.in);
         System.out.println("Chapter 12 Coins by Kevin Bell \n");
 
+        /* public enum Coin {
+            QUARTER, DIME, NICKEL, PENNY
+        } // end enum Coin */
         //prompting the user to enter how many Quarters
         System.out.print("How many coins are a QUARTER? ");
         //taking input from a user into the scanner
@@ -64,21 +67,24 @@ public class JavaApplication8 {
         System.out.println("Value of nickels: $" + nickVal_string);
         System.out.println("Value of pennies: $" + pennyVal_string); 
          */
-        
         //calculating the total value of all coin
         double total = quartVal + dimeVal + nickVal + pennyVal;
         int total_dollars = (int) total;
         int total_cents = (int) ((total % 1) * 100);
 
+        /*  for (enum c : Coin){
+                System.out.print(c);
+        } // end for each loop */
         //displaying the total of all coins
         String total_string = String.format("%2.2f", total);
 
-        if (guess == total) {
+        /*  if (guess == total) {
             System.out.println("You are correct");
         } else {
             System.out.println("You are incorrect");
-        } // end if/else statement
-
+        } // end if/else statement */
+        String ternaryOutput = (guess == total) ? "You are correct" : "You are incorrect";
+        System.out.println(ternaryOutput);
         System.out.println("Total worth of those coins is $" + total);
     }//end of main block
-}//End Class 
+}//End Class  
