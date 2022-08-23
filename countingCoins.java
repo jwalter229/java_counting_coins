@@ -3,7 +3,7 @@
  * Programmer: @author Kevin Bell
  * Version: 1.0
  * Course: SDEV 2220
- * This program practices the use of enumeration
+ * Program practices use of enumeration, ternary statements, & for-each loops
  **************************************************************************** */
 package javaapplication8;
 
@@ -75,6 +75,7 @@ public class JavaApplication8 {
         /*  for (enum c : Coin){
                 System.out.print(c);
         } // end for each loop */
+        
         //displaying the total of all coins
         String total_string = String.format("%2.2f", total);
 
@@ -87,4 +88,4 @@ public class JavaApplication8 {
         System.out.println(ternaryOutput);
         System.out.println("Total worth of those coins is $" + total);
     }//end of main block
-}//End Class  
+}//End Class
