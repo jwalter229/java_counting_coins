@@ -1,23 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor. ADD A PROPER HEADER FOR SCHOOL POINTS!
- */
+/** ****************************************************************************
+ * enumerateCountingCoins.java
+ * Programmer: @author Kevin Bell
+ * Version: 1.0
+ * Course: SDEV 2220
+ * This program practices the use of enumeration
+ **************************************************************************** */
 package javaapplication8;
 
 import java.util.*;
 
-/**
- *
- * @author 4800590195
- */
 public class JavaApplication8 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
         //creating a new scanner
         Scanner input = new Scanner(System.in);
         System.out.println("Chapter 12 Coins by Kevin Bell \n");
@@ -44,7 +38,7 @@ public class JavaApplication8 {
 
         System.out.print("How much do you think this pile of coins is worth? $");
         double guess = input.nextDouble();
-        
+
         quarters = (int) quarters;
         dimes = (int) dimes;
         nickels = (int) nickels;
@@ -62,15 +56,14 @@ public class JavaApplication8 {
 
         double pennyVal = pennies * .01;//calculating value of all pennies              
         String pennyVal_string = String.format("%2.2f", pennyVal);
-        
+
         /*
         //displaying the value of each group of coin
         System.out.println("Value of quarters: $" + quartVal_string);
         System.out.println("Value of dimes:  $" + dimeVal_string);
         System.out.println("Value of nickels: $" + nickVal_string);
         System.out.println("Value of pennies: $" + pennyVal_string); 
-        */
-
+         */
         //calculating the total value of all coin
         double total = quartVal + dimeVal + nickVal + pennyVal;
         int total_dollars = (int) total;
@@ -78,13 +71,13 @@ public class JavaApplication8 {
 
         //displaying the total of all coins
         String total_string = String.format("%2.2f", total);
-        
-        if (guess == total){
+
+        if (guess == total) {
             System.out.println("You are correct");
         } else {
             System.out.println("You are incorrect");
         } // end if/else statement
-        
+
         System.out.println("Total worth of those coins is $" + total);
     }//end of main block
-}//End Class
+}//End Class   
