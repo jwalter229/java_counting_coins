@@ -13,34 +13,35 @@ public class JavaApplication8 {
 
     public static void main(String[] args) {
         //creating a new scanner
-        Scanner input = new Scanner(System.in);
+        Scanner computerKeyboardInput = new Scanner(System.in);
         System.out.println("Chapter 12 Coins by Kevin Bell \n");
 
         /* public enum Coin {
             QUARTER, DIME, NICKEL, PENNY
         } // end enum Coin */
+        
         //prompting the user to enter how many Quarters
         System.out.print("How many coins are a QUARTER? ");
         //taking input from a user into the scanner
-        double quarters = input.nextDouble();
+        double quarters = computerKeyboardInput.nextDouble();
 
         //prompting the user the enter how many Dimes
         System.out.print("How many coins are a DIME? ");
         //taking input from a user into the scanner
-        double dimes = input.nextDouble();
+        double dimes = computerKeyboardInput.nextDouble();
 
         //prompting the user the enter how many Nickels
         System.out.print("How many coins are a NICKEL? ");
         //taking input from a user into the scanner
-        double nickels = input.nextDouble();
+        double nickels = computerKeyboardInput.nextDouble();
 
         //prompting the user the enter how many Pennies
         System.out.print("How many coins are a PENNY? ");
         //taking input from a user into the scanner
-        double pennies = input.nextDouble();
+        double pennies = computerKeyboardInput.nextDouble();
 
         System.out.print("How much do you think this pile of coins is worth? $");
-        double guess = input.nextDouble();
+        double guess = computerKeyboardInput.nextDouble();
 
         quarters = (int) quarters;
         dimes = (int) dimes;
@@ -88,4 +89,4 @@ public class JavaApplication8 {
         System.out.println(ternaryOutput);
         System.out.println("Total worth of those coins is $" + total);
     }//end of main block
-}//End Class
+}//End Class 
