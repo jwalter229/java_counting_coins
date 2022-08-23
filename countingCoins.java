@@ -11,14 +11,16 @@ import java.util.*;
 
 public class JavaApplication8 {
 
+    public enum Coin {
+        QUARTER, DIME, NICKEL, PENNY
+    } // end enum Coin
+//******************************************************************************
+
     public static void main(String[] args) {
         //creating a new scanner
         Scanner computerKeyboardInput = new Scanner(System.in);
         System.out.println("Chapter 12 Coins by Kevin Bell \n");
 
-        /* public enum Coin {
-            QUARTER, DIME, NICKEL, PENNY
-        } // end enum Coin */
         //prompting the user to enter how many Quarters
         System.out.print("How many coins are a QUARTER? ");
         //taking input from a user into the scanner
