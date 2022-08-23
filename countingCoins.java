@@ -11,7 +11,6 @@ import java.util.*;
 
 public class JavaApplication8 {
 
-    @SuppressWarnings("empty-statement")
     public static void main(String[] args) {
         //creating a new scanner
         Scanner computerKeyboardInput = new Scanner(System.in);
@@ -58,7 +57,7 @@ public class JavaApplication8 {
         double nickVal = nickels * .05;//calculating value of all nickels
         String nickVal_string = String.format("%2.2f", nickVal);
 
-        double pennyVal = pennies * .01;//calculating value of all pennies              
+        double pennyVal = pennies * .01;//calculating value of all pennies
         String pennyVal_string = String.format("%2.2f", pennyVal);
 
         /*
@@ -66,7 +65,7 @@ public class JavaApplication8 {
         System.out.println("Value of quarters: $" + quartVal_string);
         System.out.println("Value of dimes:  $" + dimeVal_string);
         System.out.println("Value of nickels: $" + nickVal_string);
-        System.out.println("Value of pennies: $" + pennyVal_string); 
+        System.out.println("Value of pennies: $" + pennyVal_string);
          */
         //calculating the total value of all coin
         double total = quartVal + dimeVal + nickVal + pennyVal;
@@ -94,4 +93,4 @@ public class JavaApplication8 {
         System.out.println(ternaryOutput);
         System.out.println("Total worth of those coins is $" + total);
     }//end of main block
-}//End Class 
+}//End Class
