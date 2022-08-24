@@ -12,42 +12,63 @@ import java.util.*;
 public class JavaApplication8 {
 
     public enum Coin {
-        QUARTER, DIME, NICKEL, PENNY
+        QUARTER(0.25),
+        DIME(0.10),
+        NICKEL(0.05),
+        PENNY(0.01);
+        public final double coinValue;
+
+        private Coin(double coinValue) {
+            this.coinValue = coinValue;
+        } // end enum special class type
+//******************************************************************************    
+// This method returns the total worth of all the coins
+
+        public double getTotalWorth(Coin ) {
+
+        } // end getTotalWorth
     } // end enum Coin
 //******************************************************************************
 
     public static void main(String[] args) {
-        //creating a new scanner
+        //Coin quarters, dimes, nickels, pennies;
+        //quarters = Coin.QUARTER;
+        // dimes = Coin.DIME;
+        // nickels = Coin.NICKEL;
+        // pennies = Coin.PENNY;
+        final double QUARTERS = 0.25, DIMES = 0.10, NICKELS = 0.05, PENNIES = 0.01;
+
+        Coin totalQuarters = Coin.QUARTER //creating a new scanner
         Scanner computerKeyboardInput = new Scanner(System.in);
         System.out.println("Chapter 12 Coins by Kevin Bell \n");
 
         //prompting the user to enter how many Quarters
         System.out.print("How many coins are a QUARTER? ");
         //taking input from a user into the scanner
-        double quarters = computerKeyboardInput.nextDouble();
+        quarters = computerKeyboardInput.nextDouble();
 
         //prompting the user the enter how many Dimes
         System.out.print("How many coins are a DIME? ");
         //taking input from a user into the scanner
-        double dimes = computerKeyboardInput.nextDouble();
+        dimes = computerKeyboardInput.nextDouble();
 
         //prompting the user the enter how many Nickels
         System.out.print("How many coins are a NICKEL? ");
         //taking input from a user into the scanner
-        double nickels = computerKeyboardInput.nextDouble();
+        nickels = computerKeyboardInput.nextDouble();
 
         //prompting the user the enter how many Pennies
         System.out.print("How many coins are a PENNY? ");
         //taking input from a user into the scanner
-        double pennies = computerKeyboardInput.nextDouble();
+        pennies = computerKeyboardInput.nextDouble();
 
         System.out.print("How much do you think this pile of coins is worth? $");
         double guess = computerKeyboardInput.nextDouble();
-
+        /*
         quarters = (int) quarters;
         dimes = (int) dimes;
         nickels = (int) nickels;
-        pennies = (int) pennies;
+        pennies = (int) pennies; */
 
         //using the inputs to calculate value of each group of coin
         double quartVal = quarters * .25;//calculating value of all quarters
